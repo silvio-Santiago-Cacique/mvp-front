@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+ 
+        
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Projeto</title>
+</head>
+
+<body>
+    <div class="mx-auto" style="padding-left:5%; padding-right: 5%">
+        <!-- Cabeçalho de informações do sistema -->
+        <header>
+            <div class="title">
+                <h2>Cadastro de veículos</h2>
+            </div>
+            <div class="banner">
+                <img src="../mvp front/img/images.jpeg"
+                    alt="y">
+                <!--<img src="https://images.contentstack.io/v3/assets/blt45c082eaf9747747/bltbcca43584b660977/5de0b6aa703bd50385f981ad/Header-5.jpg?width=1200&height=630&fit=crop"
+                    alt="y"> -->
+            </div>
+        </header>
+
+        <!-- Opções para adicionar um novo item -->
+        <section class="newItem">
+            <span class="hide" id="ln">0</span>
+            <input class="form-control" type="text" id="newId" placeholder="Id do Veículo" aria-label="informação desabilitada" disabled> >
+            <input class="form-control" type="text" id="newNome" placeholder="Nome do Veículo">
+            <input class="form-control" type="text" id="newAno" placeholder="Ano Fabr.">
+            <input class="form-control" type="text" id="newModelo" placeholder="Modelo">
+            <input class="form-control" type="text" id="newDiaria" placeholder="R$ Diária">
+            <div>
+                <span onclick="newItem()" id='btnadd' class="btn btn-primary mb-3 " >Adicionar</span>
+                <span onclick="putItem()" id='btnEdit' class="btn btn-primary mb-3 hide" aria-label="informação desabilitada" disabled>Atualizar </span>
+                <span onclick="cancelarEdit()" id='btnCancel' class="btn btn-primary mb-3 hide" aria-label="informação desabilitada" disabled>Cancelar </span>
+                <span onclick="removeElement()" id='btnRemove' class="btn btn-primary mb-3 hide" aria-label="informação desabilitada" disabled>Excluir</span>
+            </div>
+        </section>
+        <section class="newItem">
+            <input class="form-control" type="text" id="newAcessorio" placeholder="Acessório" >
+            <span onclick="postAcessorio()" id='btnaddacessorio' class="btn btn-primary mb-3 " aria-label="informação desabilitada" disabled>Adicionar</span>
+        </section>
+        <!-- Tabela com items existentes -->
+        <section class="items">
+            <table id="myTable" class="table table-striped table-hover">
+                <tbody>
+                    
+                        <th class="table-bordered">Nº ID</th>
+                        <th class="table-bordered">Nome Veículo</th>
+                        <th class="table-bordered">Ano Fabricação</th>
+                        <th class="table-bordered">Modelo Fabricação</th>
+                        <th class="table-bordered">R$ Diária</th>
+                        <th class="table-bordered">Acessórios</th>
+                        <!--<th><img src="../mvp front/img/pencil.png" onclick="editarElement()" width="15px" height="15px"></th>
+                        <th><img src="../mvp front/img/trash.png" onclick="removeElement()" width="15px" height="15px"></th>
+                        -->
+                    
+                </tbody>
+                <!--<tfoot>
+                    <tr>
+                        <th>Total Investido</th>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tfoot>
+                -->
+            </table>
+        </section>
+        </div>
+    <script src="scripts.js"></script>
+ 
+</body>
+
+</html>
+
+
