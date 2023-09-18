@@ -4,7 +4,7 @@
 
 ##Como Executar
 - Acessar o link https://github.com/silvio-Santiago-Cacique/full-stack-front no Git hub e baixar o arquivo e descompactá-lo em um local de sua preferência;
-- Abrir o arquivo index.html em um navegador (Browser) de sua preferência.
+- Abrir o arquivo index.html em um navegador (Browser) de sua preferência. Obs.: Antes, porém, deve-se rodar as APIs de veículos(mvp-api) e clientes(mvp II).
 
 Após visualização da pagina (**single page**) poder-se-á comunicar com a Api (*ver projeto(s) API(s) - mvp-api e mvp-II*). **Observação** para funcionamento correto do front a api deve estar em execução em um  servidor de sua preferência. Aqui aconselhamos **localhost 5001** para API de veículos e **localhost 5002** para a API de clientes.
 
