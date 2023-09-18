@@ -6,9 +6,9 @@
 - Acessar o link https://github.com/silvio-Santiago-Cacique/full-stack-front no Git hub e baixar o arquivo e descompactá-lo em um local de sua preferência;
 - Abrir o arquivo index.html em um navegador (Browser) de sua preferência.
 
-Após visualização da pagina (**single page**) poder-se-á comunicar com a Api (*ver projeto API - back end*). **Observação** para funcionamento correto do front a api deve estar em execução em um  servidor de sua preferência. Aqui aconselhamos **localhost 5001** para API de veículos e **localhost 5002** para a API de clientes.
+Após visualização da pagina (**single page**) poder-se-á comunicar com a Api (*ver projeto(s) API(s) - mvp-api e mvp-II*). **Observação** para funcionamento correto do front a api deve estar em execução em um  servidor de sua preferência. Aqui aconselhamos **localhost 5001** para API de veículos e **localhost 5002** para a API de clientes.
 
-Para teste, pode-se:
+Para teste, pode-se - veículos (no front e no back, itens: 1,2,3 e 4) e clientes (no back, itens: 1,2,3 e 4; no front, item 4  - get do cliente):
 1. **Cadastrar** um item novo;
 2. **Alterar** um item já cadastrado, basta clicar no item que deseja fazer as alterações e, após informar as alterações, clicar no botão **Atualizar**.
 3. **Excluir** um item já cadastrado, basta clicar na lixeira referente ao item que deseja excluir.
